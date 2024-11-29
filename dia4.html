@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Día 1 - Escuelita Bíblica de Vacaciones</title>
+  <title>Día 4 - Escuelita Bíblica de Vacaciones</title>
   <style>
     body {
       font-family: 'Comic Sans MS';
@@ -68,19 +68,19 @@
 
 <header>
   <img id="churchLogo" src="Logo1.png" alt="Logo de la Iglesia">
-  <h1>Día 1 - Escuelita Bíblica de Vacaciones</h1>
+  <h1>Día 4 - Escuelita Bíblica de Vacaciones</h1>
 </header>
 
 <section>
-  <h2>Detalles del Día 1</h2>
-  <p id="dayText">Texto inicial para el día 1.</p>
+  <h2>"JESÚS; UNA MUESTRA DE AMOR"</h2>
+  <p id="dayText">Proximamente...</p>
   <div id="countdown">Tiempo restante: 00:00:00</div>
   <button onclick="location.href='index.html'">Volver</button>
 </section>
 
 <script>
   // Establece la fecha y hora a la que se va a cambiar el texto (ejemplo: 2024-12-31 23:59:59)
-  const targetDate = new Date('2024-11-29T12:12:30').getTime();
+  const targetDate = new Date('2024-12-12T14:00:00').getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -95,8 +95,9 @@
 
     if (distance < 0) {
       clearInterval(countdownInterval);
-      document.getElementById('countdown').textContent = "¡El tiempo ha llegado!";
-      document.getElementById('dayText').textContent = "Texto actualizado para el día 1.";
+      document.getElementById('countdown').textContent = "¡Aprendamonos juntos el texto del día de hoy!";
+      document.getElementById('dayText').textContent = "Dios amó tanto a la gente de este mundo, que me entregó a mí, que soy su único Hijo" 
+      "Juan 3:16 TLA";
     }
   }
 

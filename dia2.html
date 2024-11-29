@@ -80,7 +80,7 @@
 
 <script>
   // Establece la fecha y hora a la que se va a cambiar el texto (ejemplo: 2024-12-31 23:59:59)
-  const targetDate = new Date('2024-11-29T12:12:30').getTime();
+  const targetDate = new Date('2024-12-10T14:00:00').getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -95,8 +95,9 @@
 
     if (distance < 0) {
       clearInterval(countdownInterval);
-      document.getElementById('countdown').textContent = "¡El tiempo ha llegado!";
-      document.getElementById('dayText').textContent = "Texto actualizado para el día 2.";
+      document.getElementById('countdown').textContent = "¡Aprendamonos juntos el texto del día de hoy!";
+      document.getElementById('dayText').textContent = "Él sana a los quebrantados de corazón y venda sus heridas"
+      "Salmos 147:3 RV60";
     }
   }
 
