@@ -4,64 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Día 3 - Escuelita Bíblica de Vacaciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    /* Estilos generales */
     body {
-      font-family: 'Comic Sans MS';
-      background-color: #FFEFD5; /* Fondo durazno claro */
+      font-family: 'Raleway', sans-serif;
+      background-color: #f0f8ff; /* Azul claro tipo cielo */
       margin: 0;
       padding: 0;
       text-align: center;
+      color: #444;
     }
+
+    /* Encabezado */
     header {
-      background-color: #FF6347; /* Rojo tomate */
+      background-color: #ffcc00; /* Amarillo brillante */
       color: white;
-      padding: 20px;
-      border-bottom: 5px solid #FF4500; /* Rojo anaranjado */
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 5px solid #ff8c00; /* Naranja brillante */
     }
+
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      letter-spacing: 3px;
+    }
+
     header img {
       width: 100px;
+      margin-bottom: 20px;
     }
-    h1 {
-      margin: 0;
-      font-size: 3em;
-    }
+
+    /* Sección del día */
     section {
-      background-color: #FFD700; /* Amarillo */
-      border: 3px dashed #FF4500; /* Rojo anaranjado */
-      border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 600px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      width: 80%; /* Asegura que las tarjetas no sean demasiado anchas */
+      max-width: 600px; /* Un máximo de ancho para las tarjetas */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 30px auto;
+      text-align: center;
       transition: transform 0.3s, box-shadow 0.3s;
     }
+
     section:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     }
-    h2 {
+
+    section h2 {
       font-size: 2.5em;
-      color: #FF4500;
+      color: #ff5722; /* Naranja */
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 10px;
     }
+
+    section p {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    /* Contador */
+    #countdown {
+      font-size: 1.8em;
+      margin-top: 20px;
+      color: #ff6347; /* Rojo tomate */
+    }
+
+    /* Botón */
     button {
       padding: 15px 30px;
-      background-color: #32CD32; /* Verde lima */
+      background-color: #ff5722; /* Naranja */
       color: white;
       border: none;
-      border-radius: 10px;
-      font-size: 1.5em;
+      border-radius: 25px;
+      font-size: 1.2em;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s;
     }
+
     button:hover {
-      background-color: #228B22; /* Verde bosque */
-      transform: scale(1.1);
+      background-color: #e64a19; /* Naranja más oscuro */
+      transform: scale(1.05);
     }
-    #countdown {
-      font-size: 2em;
-      margin-top: 20px;
-      color: #FF6347; /* Rojo tomate */
+
+    /* Diseño responsivo */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8em;
+      }
+
+      section {
+        width: 90%; /* Las tarjetas se adaptan al 90% del contenedor */
+      }
+
+      #countdown {
+        font-size: 1.5em;
+      }
+
+      button {
+        font-size: 1.1em;
+      }
     }
+
   </style>
 </head>
 <body>
@@ -96,8 +145,7 @@
     if (distance < 0) {
       clearInterval(countdownInterval);
       document.getElementById('countdown').textContent = "¡Aprendamonos juntos el texto del día de hoy!";
-      document.getElementById('dayText').textContent = "Porque nada hay imposible para Dios" 
-      "Lucas 1:37";
+      document.getElementById('dayText').textContent = "Porque nada hay imposible para Dios. Lucas 1:37";
     }
   }
 

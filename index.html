@@ -4,83 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escuelita Bíblica de Vacaciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    /* Estilos generales */
     body {
-      font-family: 'Comic Sans MS';
-      background-color: #FFEFD5; /* Fondo durazno claro */
+      font-family: 'Raleway', sans-serif;
+      background-color: #f0f8ff; /* Azul claro tipo cielo */
       margin: 0;
       padding: 0;
+      color: #444;
     }
+
+    /* Encabezado */
     header {
-      background-color: #FF6347; /* Rojo tomate */
+      background-color: #ffcc00; /* Amarillo brillante */
       color: white;
       text-align: center;
-      padding: 20px;
-      border-bottom: 5px solid #FF4500; /* Rojo anaranjado */
+      padding: 60px 20px;
+      border-bottom: 5px solid #ff8c00; /* Naranja brillante */
     }
+
+    header h1 {
+      font-size: 4em;
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      letter-spacing: 3px;
+    }
+
     header img {
       width: 100px;
+      margin-bottom: 20px;
     }
-    h1 {
-      margin: 0;
-      font-size: 3em;
-    }
+
+    /* Barra de navegación */
     nav {
       display: flex;
       justify-content: center;
-      background-color: #FFD700; /* Amarillo */
-      padding: 10px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #009688; /* Verde agua */
+      padding: 15px 0;
     }
+
     nav a {
       text-decoration: none;
-      color: #FF6347; /* Rojo tomate */
-      padding: 10px 20px;
+      color: white;
+      padding: 12px 25px;
       margin: 0 10px;
-      background-color: white;
-      border-radius: 5px;
+      border-radius: 30px;
+      font-size: 1.2em;
+      font-weight: 500;
+      text-transform: uppercase;
       transition: background-color 0.3s, transform 0.3s;
     }
+
     nav a:hover {
-      background-color: #FF4500;
-      color: white;
+      background-color: #00796b; /* Verde más oscuro */
       transform: scale(1.1);
     }
+
+    /* Contenido principal en columna (vertical) */
     main {
-      padding: 20px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
     }
+
     section {
-      background-color: #FFD700; /* Amarillo */
-      border: 3px dashed #FF4500; /* Rojo anaranjado */
-      border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 600px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      width: 80%; /* Asegura que las tarjetas no sean demasiado anchas */
+      max-width: 600px; /* Un máximo de ancho para las tarjetas */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
       transition: transform 0.3s, box-shadow 0.3s;
     }
+
     section:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     }
+
     section h2 {
-      font-size: 2.5em;
-      color: #FF4500;
+      font-size: 2.4em;
+      color: #ff5722; /* Naranja */
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 10px;
     }
+
+    section p {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    /* Botones */
     button {
       padding: 15px 30px;
-      background-color: #32CD32; /* Verde lima */
+      background-color: #ff5722; /* Naranja */
       color: white;
       border: none;
-      border-radius: 10px;
-      font-size: 1.5em;
+      border-radius: 25px;
+      font-size: 1.2em;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s;
+      display: block;
+      margin: 0 auto;
     }
+
     button:hover {
-      background-color: #228B22; /* Verde bosque */
-      transform: scale(1.1);
+      background-color: #e64a19; /* Naranja más oscuro */
+      transform: scale(1.05);
     }
+
+    /* Diseño responsivo */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8em;
+      }
+
+      nav a {
+        font-size: 1.1em;
+        padding: 10px 20px;
+        margin: 0 8px;
+      }
+
+      section {
+        width: 90%; /* Las tarjetas se adaptan al 90% del contenedor */
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -132,5 +186,3 @@
 
 </body>
 </html>
-
-
