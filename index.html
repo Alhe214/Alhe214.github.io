@@ -22,6 +22,7 @@
       text-align: center;
       padding: 60px 20px;
       border-bottom: 5px solid #ff8c00; /* Naranja brillante */
+      position: relative; /* Para posicionar el logo adicional */
     }
 
     header h1 {
@@ -34,6 +35,14 @@
     header img {
       width: 200px;
       margin-bottom: 20px;
+    }
+
+    /* Logo adicional */
+    .logo-adicional {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 150px;
     }
 
     /* Barra de navegación */
@@ -140,6 +149,7 @@
 <body>
 
 <header>
+  <img class="logo-adicional" src="Logo.png" alt="Logo Adicional">
   <img id="churchLogo" src="Logo2.png" alt="Logo de la Iglesia">
   <h1>Escuelita Bíblica de Vacaciones 2024</h1>
 </header>
@@ -186,4 +196,3 @@
 
 </body>
 </html>
-
