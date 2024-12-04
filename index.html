@@ -146,37 +146,6 @@
       transform: scale(1.05);
     }
 
-    /* Sección de horarios */
-    .section-horarios {
-      background-color: #ffeb3b; /* Amarillo claro */
-      border-radius: 12px;
-      padding: 25px;
-      width: 80%; /* Asegura que las tarjetas no sean demasiado anchas */
-      max-width: 600px; /* Un máximo de ancho para las tarjetas */
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-      margin: 20px auto;
-    }
-
-    .section-horarios:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .section-horarios h2 {
-      font-size: 2.4em;
-      color: #ff5722; /* Naranja */
-      font-family: 'Pacifico';
-      margin-bottom: 10px;
-    }
-
-    .section-horarios p {
-      font-size: 1.1em;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
     /* Diseño responsivo */
     @media (max-width: 768px) {
       header h1 {
@@ -189,7 +158,7 @@
         margin: 0 8px;
       }
 
-      section, .section-horarios {
+      section {
         width: 90%; /* Las tarjetas se adaptan al 90% del contenedor */
       }
     }
@@ -201,7 +170,7 @@
 <header>
   <img class="logo-adicional" src="Logo.PNG" alt="Logo Adicional">
   <img id="churchLogo" src="Logo2.png" alt="Logo de la Iglesia">
-  <div class="enlace-adicional" onclick="document.getElementById('horarios').scrollIntoView();">Conoce nuestros horarios</div>
+  <a href="horarios.html" class="enlace-adicional">Conoce nuestros horarios</a>
   <h1>Escuelita Bíblica de Vacaciones 2024</h1>
 </header>
 
@@ -242,14 +211,6 @@
     <h2>Día 5</h2>
     <p>"JESÚS; UNA NUEVA VIDA PARA TI"</p>
     <button onclick="location.href='dia5.html'">Descubre el texto del día de hoy</button>
-  </section>
-
-  <!-- Sección de horarios -->
-  <section id="horarios" class="section-horarios">
-    <h2>Horarios</h2>
-    <p>Lunes a Viernes: 9:00 AM - 12:00 PM</p>
-    <p>Sábado: 10:00 AM - 1:00 PM</p>
-    <p>Domingo: 11:00 AM - 2:00 PM</p>
   </section>
 </main>
 
